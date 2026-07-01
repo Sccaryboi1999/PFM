@@ -1,0 +1,9 @@
+date,description,amount,category,type
+2026-06-01,Paycheck,3900.00,Miscellaneous,Income
+2026-06-02,Rent,-1400.00,Housing,Expense
+2026-06-04,Grocery Market,-96.27,Food,Expense
+2026-06-05,Gas Station,-42.18,Transportation,Expense
+2026-06-07,Internet Bill,-82.99,Bills,Expense
+2026-06-09,Concert Tickets,-130.00,Entertainment,Expense
+2026-06-10,Emergency Fund Transfer,-500.00,Savings,Expense
+2026-06-12,Coffee Shop,-8.75,Food,Expense
