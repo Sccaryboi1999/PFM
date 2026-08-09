@@ -1,0 +1,73 @@
+name: Bug report
+description: Report reproducible behavior that does not work as expected.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Do not include real financial records, secure-storage data, credentials, or signing material.
+  - type: input
+    id: version
+    attributes:
+      label: Commit or version
+      description: Provide the commit SHA or build version where the issue occurs.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Device and Android version
+      placeholder: Pixel 7 emulator, Android 13 / API 33
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Dashboard
+        - Transactions
+        - CSV import
+        - Budgets and alerts
+        - Reports
+        - Secure storage
+        - Startup or build
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Use fictional values and provide the smallest reliable sequence.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add sanitized logs or screenshots if useful. Remove all personal finance data first.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched existing issues for this problem.
+          required: true
+        - label: I removed personal, financial, credential, and signing information.
+          required: true
+
