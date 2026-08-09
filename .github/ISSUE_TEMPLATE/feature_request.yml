@@ -1,0 +1,58 @@
+name: Feature request
+description: Suggest an improvement to the finance workflow or project maintenance.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user or maintainer problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the workflow and expected outcome.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Dashboard
+        - Transactions
+        - CSV import
+        - Budgets and alerts
+        - Reports
+        - Privacy and security
+        - .NET MAUI migration
+        - Testing and tooling
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy and data impact
+      description: Explain whether this changes storage, permissions, backup, networking, or handling of financial data.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched existing issues for a similar request.
+          required: true
+        - label: This request does not contain real financial or account information.
+          required: true
+
